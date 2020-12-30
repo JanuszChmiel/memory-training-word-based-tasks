@@ -8,7 +8,35 @@ _lbcStartVGroup()
 $a = _lbcCtrlCreateInput("&Abrhám:")
 $b = _lbcCtrlCreateInput("&Adamczyk:")
 $c = _lbcCtrlCreateInput("&Auerswald:")
-$c = _lbcCtrlCreateInput("&Augusta:")
+$d = _lbcCtrlCreateInput("&Babka:")
+$e = _lbcCtrlCreateInput("&Balek-Brodský:")
+$f = _lbcCtrlCreateInput("&Bambas:")
+$g = _lbcCtrlCreateInput("&Bareš:")
+$h= _lbcCtrlCreateInput("Bartoš&:")
+$ch = _lbcCtrlCreateInput("&Bartoška:")
+$i=_lbcCtrlCreateInput("&Bednář:")
+$j = _lbcCtrlCreateInput("&Bedrna:")
+$k = _lbcCtrlCreateInput("&Bek:")
+$l = _lbcCtrlCreateInput("&Beneš:")
+$m = _lbcCtrlCreateInput("&Berman:")
+$n = _lbcCtrlCreateInput("&Beyvl:")
+$o= _lbcCtrlCreateInput("&Bidlas:")
+$p = _lbcCtrlCreateInput("&Bílík:")
+$q = _lbcCtrlCreateInput("&Bláha:")
+$r = _lbcCtrlCreateInput("&Blažek:")
+$s = _lbcCtrlCreateInput("&Bobek:")
+$t = _lbcCtrlCreateInput("&Boháč:")
+$u = _lbcCtrlCreateInput("&Bolek:")
+$v = _lbcCtrlCreateInput("&Brabec:")
+$w = _lbcCtrlCreateInput("&Bret:")
+$x = _lbcCtrlCreateInput("&Brodský:")
+$y = _lbcCtrlCreateInput("&Brousek mladší:")
+$z = _lbcCtrlCreateInput("&Brousek starší:")
+$a1 = _lbcCtrlCreateInput("&Brož:")
+$b1 = _lbcCtrlCreateInput("&Brzobohatý:")
+$c1 = _lbcCtrlCreateInput("&Budař:")
+$d1 = _lbcCtrlCreateInput("&Burian:")
+$e1 = _lbcCtrlCreateInput("&Burian:")
 
 $vIdBasket = _lbcCtrlCreateList("&Správné odpovědi:")
 _lbcStartVGroup()
@@ -50,7 +78,236 @@ _GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
 _GUICtrlListBox_SetCurSel($vIdBasket, $i)
 GUICtrlSetData($c, "")
 EndIf
-
+Case $d
+$sFruit = GUICtrlRead($d)
+If $sFruit <> "Václav" Then
+_lbcTest("Omyl! Václav Babka","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($d, "")
+EndIf
+Case $e
+$sFruit = GUICtrlRead($e)
+If $sFruit <> "Filip" Then
+_lbcTest("Omyl! Filip Balek-Brodský","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($e, "")
+EndIf
+Case $f
+$sFruit = GUICtrlRead($f)
+If $sFruit <> "Daniel" Then
+_lbcTest("Omyl! Daniel Bambas","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($f, "")
+EndIf
+Case $g
+$sFruit = GUICtrlRead($g)
+If $sFruit <> "Igor" Then
+_lbcTest("Igor Bareš","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($g, "")
+EndIf
+Case $h
+$sFruit = GUICtrlRead($h)
+If $sFruit <> "Jan" Then
+_lbcTest("Jan Bartoš","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($ch, "")
+EndIf
+Case $i
+$sFruit = GUICtrlRead($i)
+If $sFruit <> "Jiří" Then
+_lbcTest("Omyl! Jiří Bartoška","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($i, "")
+EndIf
+Case $j
+$sFruit = GUICtrlRead($j)
+If $sFruit <> "Jiří" Then
+_lbcTest("Omyl! Jiří Bednář","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($j, "")
+EndIf
+Case $k
+$sFruit = GUICtrlRead($k)
+If $sFruit <> "Vlastimil" Then
+_lbcTest("Omyl! Vlastimil Bedrna","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($k, "")
+EndIf
+Case $l
+$sFruit = GUICtrlRead($l)
+If $sFruit <> "Josef" Then
+_lbcTest("Omyl! Josef Bek","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($l, "")
+EndIf
+Case $m
+$sFruit = GUICtrlRead($m)
+If $sFruit <> "Svatopluk" Then
+_lbcTest("Omyl! Svatopluk Beneš","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($a, "")
+EndIf
+Case $n
+$sFruit = GUICtrlRead($n)
+If $sFruit <> "Karel" Then
+_lbcTest("Omyl! Karel Berman","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($n, "")
+EndIf
+Case $o
+$sFruit = GUICtrlRead($o)
+If $sFruit <> "Josef" Then
+_lbcTest("Omyl! Josef Beyvl","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($o, "")
+EndIf
+Case $p
+$sFruit = GUICtrlRead($p)
+If $sFruit <> "Jan" Then
+_lbcTest("Omyl! Jan Bidlas","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($p, "")
+EndIf
+Case $q
+$sFruit = GUICtrlRead($q)
+If $sFruit <> "Aleš" Then
+_lbcTest("Omyl! Aleš Bílík","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($q, "")
+EndIf
+Case $r
+$sFruit = GUICtrlRead($r)
+If $sFruit <> "Josef" Then
+_lbcTest("Omyl! Josef Bláha","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($r, "")
+EndIf
+Case $s
+$sFruit = GUICtrlRead($s)
+If $sFruit <> "Filip" Then
+_lbcTest("Omyl! Filip Blažek","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($s, "")
+EndIf
+Case $t
+$sFruit = GUICtrlRead($t)
+If $sFruit <> "Pavel" Then
+_lbcTest("Omyl! Pavel Bobek","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($t, "")
+EndIf
+Case $u
+$sFruit = GUICtrlRead($u)
+If $sFruit <> "Ladislav" Then
+_lbcTest("Omyl! Ladislav Boháč","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($u, "")
+EndIf
+Case $v
+$sFruit = GUICtrlRead($v)
+If $sFruit <> "Emil" Then
+_lbcTest("Omyl! Emil Bolek","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($v, "")
+EndIf
+Case $w
+$sFruit = GUICtrlRead($w)
+If $sFruit <> "Vladimír" Then
+_lbcTest("Omyl! Vladimír Brabec","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($w, "")
+EndIf
+Case $x
+$sFruit = GUICtrlRead($x)
+If $sFruit <> "Ondřej" Then
+_lbcTest("Omyl! Ondřej Brett","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($x, "")
+EndIf
+Case $y
+$sFruit = GUICtrlRead($y)
+If $sFruit <> "Vlastimil" Then
+_lbcTest("Omyl! Vlastimil Brodský","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($y, "")
+EndIf
+Case $z
+$sFruit = GUICtrlRead($z)
+If $sFruit <> "Otakar" Then
+_lbcTest("Omyl! Otakar Brousek mladší","chyba")
+Else
+$i = _GUICtrlListBox_GetCurSel($vIdBasket) + 1
+_GUICtrlListBox_InsertString($vIdBasket, $sFruit, $i)
+_GUICtrlListBox_SetCurSel($vIdBasket, $i)
+GUICtrlSetData($z, "")
+EndIf
 
 Case $vIdDelete
 $iCount = _GUICtrlListBox_GetCount($vIdBasket)
